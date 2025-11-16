@@ -1,3 +1,8 @@
+#https://github.com/nsous/lab10-NS
+#Partner 1: Nicole Sous
+#Partner 2: NA
+#I did both roles, as per Case's recommendation because my group partner did not answer me.
+
 import unittest
 from calculator import *
 
