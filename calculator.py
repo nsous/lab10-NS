@@ -32,13 +32,13 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if a == 0:
+    if b == 0:
         raise ZeroDivisionError
     return a / b
 
 
 def logarithm(a, b):
-    if a == 1 or a <= 0 or b == 0:
+    if a == 0 or b <= 0 or b == 1:
         raise ValueError
     return math.log(a,b)
 
