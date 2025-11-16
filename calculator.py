@@ -6,33 +6,39 @@ One function per operation, in order.
 """
 import math
 
-def square_root(a): 
-    math.sqrt(a) 
-    raise ValueError if a < 0
-    
-def hypotenuse(a, b): 
-    math.hypot(a, b) 
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
     #can have negative nums
 
 def add(a, b): 
-    a + b
+    return a + b
 
 def subtract(a, b): 
-    a - b
+    return a - b
 
 def multiply(a, b): 
-    a * b
+    return a * b
 
-def divide(a, b): 
-    b / a   
-    raise ZeroDivisionError if a == 0 
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
 
-def logarithm(a, b): 
-    loga(b)
-    raise ValueError
+
+def logarithm(a, b):
+    if a == 1 or a <= 0 or b == 0:
+        raise ValueError
+    return math.log(b,a)
+
 
 def exponent(a, b): 
-    ab
+    return a**b
 
 
 
