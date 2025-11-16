@@ -20,20 +20,20 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(4,2),8)
-        self.assertEqual(multiply(7,8),56)
-        self.assertEqual(multiply(3,2), 6)
+        self.assertEqual(mul(4,2),8)
+        self.assertEqual(mul(7,8),56)
+        self.assertEqual(mul(3,2), 6)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(divide(8,2),4)
-        self.assertEqual(divide(18,2),9)
-        self.assertEqual(divide(9,3),3)
+        self.assertEqual(div(8,2),4)
+        self.assertEqual(div(18,2),9)
+        self.assertEqual(div(9,3),3)
 
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            divide(5, 0)
+            div(5, 0)
 
 
     def test_logarithm(self): # 3 assertions
@@ -56,7 +56,7 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hypotenuse(2,3),6)
+        self.assertEqual(hypotenuse(3,3),9)
         self.assertEqual(hypotenuse(5,12),13)
         self.assertEqual(hypotenuse(4,3),5)
 
